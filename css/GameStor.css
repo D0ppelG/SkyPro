@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: montserrat;
+}
+
+a {
+  text-decoration: none;
+}
+
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
+.header {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(../GameStor-img/eab4460520c77774125b2adcd28ec416.jpeg), lightgray 50%/cover no-repeat;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 1024px;
+}
+.header_title {
+  color: #FFF;
+  font-size: 64px;
+  font-weight: 700;
+  padding: 217px 0 32px 0;
+}
+.header_text {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  padding: 0 0 42px 0;
+}
+.header_button {
+  border: 1px #9C0332 solid;
+  border-radius: 30px;
+  background: #9C0332;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: inherit;
+  padding: 13px 74px;
+}
+.header_button:hover {
+  background-color: #EB443F;
+  transition: all 0.5s;
+}
+
+.nav_body {
+  background-color: #000915;
+  height: 556px;
+}
+
+.nav {
+  display: flex;
+  gap: 32px;
+  padding: 120px 0 0 0;
+}
+.nav_pos {
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 32px;
+  padding: 236px 0 32px 32px;
+}
+.nav_1-img {
+  background-image: url(../GameStor-img/1-img.png);
+  border-radius: 16px;
+  border: 3px solid #000915;
+  width: 379px;
+}
+.nav_1-img:hover {
+  border-radius: 16px;
+  border: 3px solid #44D2FF;
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(../GameStor-img/1-img.png), lightgray 50%/cover no-repeat;
+  transition: 0.3s;
+}
+.nav_2-img {
+  background-image: url(../GameStor-img/2-img.png);
+  border-radius: 16px;
+  border: 3px solid #000915;
+  width: 379px;
+}
+.nav_2-img:hover {
+  border-radius: 16px;
+  border: 3px solid #44D2FF;
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(../GameStor-img/2-img.png), lightgray 50%/cover no-repeat;
+  transition: 0.3s;
+}
+.nav_3-img {
+  background-image: url(../GameStor-img/3-img.png);
+  border-radius: 16px;
+  border: 3px solid #000915;
+  width: 379px;
+}
+.nav_3-img:hover {
+  border-radius: 16px;
+  border: 3px solid #44D2FF;
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(../GameStor-img/3-img.png), lightgray 50%/cover no-repeat;
+  transition: 0.3s;
+}/*# sourceMappingURL=GameStor.css.map */
