@@ -103,4 +103,49 @@ a {
   border: 3px solid #44D2FF;
   background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(../GameStor-img/3-img.png), lightgray 50%/cover no-repeat;
   transition: 0.3s;
+}
+
+@media (max-width: 376px) {
+  body {
+    font-size: 16px;
+  }
+  .center {
+    padding-left: calc(50% - 187.5px);
+    padding-right: calc(50% - 187.5px);
+  }
+  .header {
+    height: 735px;
+  }
+  .header_title {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .header_text {
+    font-size: 0.875rem;
+    text-align: center;
+  }
+  .header_button {
+    margin: 0 0 0 70px;
+  }
+  .nav_body {
+    height: 1221px;
+  }
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav_pos {
+    padding: 236px 0 32px 16px;
+  }
+  .nav_1-img {
+    width: 343px;
+  }
+  .nav_2-img {
+    width: 343px;
+  }
+  .nav_3-img {
+    width: 343px;
+  }
 }/*# sourceMappingURL=GameStor.css.map */
