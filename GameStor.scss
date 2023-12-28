@@ -104,3 +104,54 @@ a {
     }
   }
 }
+
+.midle{
+  background-color: #000915;
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  &_block{
+    display: flex;
+  }
+}
+
+.midle_img_mob{
+  display: none;
+}
+
+.block{
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  max-width: 584px;
+  &_title{
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 700;
+  }
+  &_text{
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 32px;
+  }
+  &_button{
+    border: 1px #9C0332 solid;
+    border-radius: 30px;
+    background: #9C0332;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: inherit;
+    padding: 13px 74px;
+    max-width: 234px; 
+      &:hover {
+        background-color: #EB443F;
+        transition: all 0.5s;
+      }  
+  }   
+}
+
+@import 'GameStorMob'
