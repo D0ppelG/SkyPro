@@ -9,7 +9,7 @@ if (password === usePassword){
 }
 
 // Второе задание //
-let c = Number (10)
+let c = 10
 
 if (c > 0 && c < 10){
   alert("Верно")
@@ -18,8 +18,8 @@ if (c > 0 && c < 10){
 }
 
 //Третье задание//
-let a = Number (10)
-let b = Number (-30)
+let a = 10
+let b = -30
 
 if (a > 100 || b > 100){
   alert ("Верно")
@@ -28,24 +28,34 @@ if (a > 100 || b > 100){
 }
 
 //Четвёртое задание//
-let d = 2
-let f = 3
+let d = '2'
+let f = '3'
 
-alert(d + f);
+alert(Number(d) + Number(f));
 
 //Пятое задание//
 let monthNumber = Number (prompt("Введите порядковый номер текущий месяц года"))
 
-if (monthNumber == (1, 2, 12)){
-  alert ("Сейчас зима!")
-} else if (monthNumber == (3, 4, 5)){
-  alert ("Сейчас весна!")
-} else if (monthNumber == (6, 7, 8)){
-  alert ("Сейчас лето!")
-} else if (monthNumber == (9, 10, 11)) {
-  alert ("Сейчас осень!")
-} else if (monthNumber < 1 || monthNumber > 12){
-  alert ("Такого месяца не существует!!!")
-} else {
-  alert ("Вы ввели не номер!!!")
+switch (monthNumber) {
+  case 12:
+  case 1:
+  case 2:
+    alert("Сейчас зима!")  
+    break;
+  case 3:
+  case 4:
+  case 5:
+    alert("Сейчас весна!")
+    break
+  case 6:
+  case 7:
+  case 8:
+    alert("Сейчас лето!")
+  case 9:
+  case 10:
+  case 11:
+    alert("Сейчас весна!")  
+    break          
+  default:
+    alert("Такого месяца не существуе")
 }
