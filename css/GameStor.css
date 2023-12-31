@@ -117,7 +117,23 @@ a {
   display: flex;
 }
 
+.midle_2 {
+  background-color: #000915;
+  height: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.midle_2_block {
+  display: flex;
+}
+
 .midle_img_mob {
+  display: none;
+}
+
+.midle_2_img_mob {
   display: none;
 }
 
@@ -210,8 +226,24 @@ a {
   .midle_img_mob {
     display: block;
   }
+  .midle_2 {
+    height: 653px;
+    padding: 0 0 90px 0;
+    flex-direction: column-reverse;
+  }
+  .midle_2_block {
+    text-align: center;
+    padding: 0 16px;
+  }
+  .midle_2_img {
+    display: none;
+  }
+  .midle_2_img_mob {
+    display: block;
+  }
   .block_title {
     font-size: 2rem;
+    padding: 96px 0 0 0;
   }
   .block_text {
     font-size: 0.875rem;
