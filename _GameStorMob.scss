@@ -2,13 +2,14 @@
   body{
     font-size: 16px;
   }
-
+  
   .center{
     padding-left: calc(50% - 187.5px);
     padding-right: calc(50% - 187.5px);
-  }
-  
+  }  
+
   .header{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) -7.35%, #000915 100%), url(../GameStor-img/preview-mob.png), lightgray -240.259px 0px / 294% 100% no-repeat;
     height: 735px;
     &_title{
       font-size: 2rem;
@@ -82,5 +83,22 @@
     &_button{
       margin: 0 0 0 70px;
     }
-  } 
+  }
+  .penultimate_blok {
+    background: linear-gradient(180deg, #000915 0%, #00000000 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.00) -7.35%, #000915 100%), url(../GameStor-img/preview-mob_bot.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+  }
+  .penult {
+    padding: 0 16px;
+    &_title {
+      font-size: 2rem;
+    }
+    &_text {
+      font-size: 0.875rem;
+      text-align: center;
+    }
+  }
 }

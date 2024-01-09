@@ -9,7 +9,7 @@ for (let i = 1; i <= 5; i++) {
 }
 
 //Третье задание//
-for (let i = 7; i >= 7 && i <= 22; i++) {
+for (let i = 7; i <= 22; i++) {
   console.log(i);
 }
 

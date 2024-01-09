@@ -17,7 +17,7 @@ a {
 }
 
 .header {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(../GameStor-img/eab4460520c77774125b2adcd28ec416.jpeg), lightgray 50%/cover no-repeat;
+  background: linear-gradient(180deg, rgba(3, 1, 1, 0) -7.35%, #000915 100%), url(../GameStor-img/preview.jpeg), lightgray 50%/cover no-repeat;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -170,6 +170,64 @@ a {
   transition: all 0.5s;
 }
 
+.penultimate_blok {
+  background: linear-gradient(180deg, #000915 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(../GameStor-img/preview-mob_bot.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+}
+
+.penult {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  padding: 276px 0 0 0;
+  gap: 32px;
+}
+.penult_title {
+  color: #FFF;
+  text-align: center;
+  font-size: 48px;
+  font-weight: 700;
+}
+.penult_text {
+  max-width: 1200px;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 32px;
+  text-align: center;
+}
+.penult_button {
+  border: 1px #9C0332 solid;
+  border-radius: 30px;
+  background: #9C0332;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: inherit;
+  padding: 13px 74px;
+}
+.penult_button:hover {
+  background-color: #EB443F;
+  transition: all 0.5s;
+}
+
+.footer {
+  background: #000915;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_h3 {
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 400;
+}
+
 @media (max-width: 376px) {
   body {
     font-size: 16px;
@@ -179,6 +237,7 @@ a {
     padding-right: calc(50% - 187.5px);
   }
   .header {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(../GameStor-img/preview-mob.png), lightgray -240.259px 0px/294% 100% no-repeat;
     height: 735px;
   }
   .header_title {
@@ -250,5 +309,22 @@ a {
   }
   .block_button {
     margin: 0 0 0 70px;
+  }
+  .penultimate_blok {
+    background: linear-gradient(180deg, #000915 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(../GameStor-img/preview-mob_bot.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+  }
+  .penult {
+    padding: 0 16px;
+  }
+  .penult_title {
+    font-size: 2rem;
+  }
+  .penult_text {
+    font-size: 0.875rem;
+    text-align: center;
   }
 }/*# sourceMappingURL=GameStor.css.map */
