@@ -1,4 +1,4 @@
-@media (max-width:376px){
+@media (max-width: 768px){
   body{
     font-size: 16px;
   }
@@ -45,6 +45,7 @@
     }
   }
   .midle {
+    flex-wrap: wrap;
     height: 653px;
     &_block{
       text-align: center;
@@ -61,6 +62,7 @@
     height: 653px;
     padding: 0 0 90px 0;
     flex-direction: column-reverse;
+    flex-wrap: wrap;
     &_block {
       text-align: center;
       padding: 0 16px;
@@ -73,15 +75,15 @@
     }
   }
   .block{
+    padding: 0 16px;
     &_title{
       font-size: 2rem;
       padding: 96px 0 0 0;
     }
     &_text {
+      max-width: 375px;
       font-size: 0.875rem;
-    }
-    &_button{
-      margin: 0 0 0 70px;
+      text-align: center;
     }
   }
   .penultimate_blok {
