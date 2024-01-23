@@ -2,8 +2,8 @@
 let num = [1, 5, 4, 10, 0, 3]
 
 for (let item of num){
-  if (item == 10) break
   console.log(item);
+  if (item == 10) break
 }
 
 //Второе задание//
@@ -19,12 +19,15 @@ numeric = numeric.join(' ');
 console.log(numeric);
 
 //Четвёртое задание//
-const massivs = [
-  [1, 1, 1],
-  [1, 1, 1],
-  [1, 1, 1]
-]
-console.log(massivs);
+ const arr = [];
+ for (j = 0; j < 3; j++ ) {
+   const nestArr = [];
+   for (k = 0; k < 3; k++) {
+     nestArr.push(1);
+   }
+   arr.push(nestArr);
+ }
+ console.log(arr);
 
 //Пятое задание//
 let massiv = [1, 1, 1] 
@@ -36,31 +39,22 @@ console.log(massiv);
 //Шестое задание/
 let sorts = [9, 8, 7, 'a', 6, 5]
 
-sorts = sorts.sort()
+sorts.sort()
 sorts.pop()
 
 console.log(sorts);
 
 //Седьмое задание//
-const arr = [9, 8, 7, 6, 5];
-let userNum = Number(prompt("Угадаешь число?"))
-let True = 0
 
-for (const item of arr) {
-  if (isNaN(userNum) || userNum == ""){
-    True -= 1
-    break
-  } else if (userNum == item){
-    True += 1
-  }                                               //                                                :):):):)
-}                                                //Ну тут как-то странно, но работает нормикс      :):):):):)
+const sec = [9, 8, 7, 6, 5];
+let userAnswer = Number(prompt('Угадайте число'));
 
-if (True == 1) {
-  alert("Угадал!!!")
-} else if (True == 0){
-  alert("Не угадал")
-} else if (True == -1){
-  alert("Вы не ввели число!!!")
+if (isNaN(userAnswer)) {
+  alert('Это не число!')
+} else if (sec.includes(userAnswer)) {
+  alert('Угадал');
+} else {
+  alert('Не угадал');
 }
 
 //Восьмое задание//
@@ -80,38 +74,41 @@ let multidimensionalJoin = multidimensional[0].concat(multidimensional[1])
 console.log(multidimensionalJoin);
 
 //Десятое задание//
-let randomNum = [1,5,9,10,2,6,8,3,4,7]
-let i = 0
-for (const item of randomNum) {
-  console.log(randomNum[i] + randomNum[i + 1])
-  i += 1
-  if (i == 9) {
-    break
-  }
+let arr10 = [9, 8, 7, 6, 5];
+
+for (let i = 0; i < arr10.length - 1; i++) {
+  let sumArr10 = arr10[i] + arr10[i + 1];
+  console.log(`Сумма текущего элемента равна ${arr10[i]} и следуещего эелемента ${arr10[i + 1]} = ${sumArr10}`);
 }
+
 //Одинадцатое задание//
-let square = [3, 6, 8, 20, 50, 256]
 
-let square2 = square.map(item => item * item)
-console.log(square2);
+ function getSquare(arr) {
+ 	const result = [];
+ 	for (let i = 0; i < arr.length; i++) {
+ 		result.push(arr[i] ** 2);
+ 	}
+ 	return result;
+ }
+
+ console.log(getSquare([9, 14, 21]));
+
 //Двенадцатое задание//
-let getLengthWords = ['слово', '', 'слог', 'длинное предложение', 'буква']
-let newArr = [] 
+ function stringLength(arr) {
+ 	const result = [];
+ 	for (let i = 0; i < arr.length; i++) {
+ 		result.push(arr[i].length);
+ 	}
+ 	console.log(result);
+ }
 
-for (let i = 0; i < getLengthWords.length; i++) {
-  newArr.push(getLengthWords[i].length);
-}
-
-console.log(newArr);
+stringLength(['слово', '', 'слог', 'длинное предложение', 'буква']);
 
 //Тринадцатое задание//
 function filterPositive(array) {
-  const negative = [];
-  for (let i = 0; i < array.length; i++) {
-    if (array[i] < 0) { 
-      negative.push(array[i])
-    }
-  }
-  return negative
+  const result = [];
+  result.push(array.filter(num => num < 0));
+  console.log(result);
 }
-console.log(filterPositive([-100, 30, 55, -23, 65]));
+
+filterPositive([-25, 25, 0, -1000, -2])
