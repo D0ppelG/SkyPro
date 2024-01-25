@@ -109,7 +109,7 @@ a {
   background-color: #000915;
   height: 800px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
 }
@@ -121,7 +121,7 @@ a {
   background-color: #000915;
   height: 800px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
 }
@@ -139,7 +139,10 @@ a {
 
 .block {
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: column;
+  align-content: center;
+  align-items: center;
   gap: 32px;
   max-width: 584px;
 }
@@ -180,6 +183,7 @@ a {
 
 .penult {
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: column;
   align-content: center;
   align-items: center;
@@ -228,7 +232,7 @@ a {
   font-weight: 400;
 }
 
-@media (max-width: 376px) {
+@media (max-width: 768px) {
   body {
     font-size: 16px;
   }
@@ -273,6 +277,7 @@ a {
     width: 343px;
   }
   .midle {
+    flex-wrap: wrap;
     height: 653px;
   }
   .midle_block {
@@ -289,6 +294,7 @@ a {
     height: 653px;
     padding: 0 0 90px 0;
     flex-direction: column-reverse;
+    flex-wrap: wrap;
   }
   .midle_2_block {
     text-align: center;
@@ -300,15 +306,17 @@ a {
   .midle_2_img_mob {
     display: block;
   }
+  .block {
+    padding: 0 16px;
+  }
   .block_title {
     font-size: 2rem;
     padding: 96px 0 0 0;
   }
   .block_text {
+    max-width: 375px;
     font-size: 0.875rem;
-  }
-  .block_button {
-    margin: 0 0 0 70px;
+    text-align: center;
   }
   .penultimate_blok {
     background: linear-gradient(180deg, #000915 0%, rgba(0, 0, 0, 0) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0) -7.35%, #000915 100%), url(../GameStor-img/preview-mob_bot.png);

@@ -109,7 +109,7 @@ a {
   background-color: #000915;
   height: 800px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
   &_block{
@@ -121,7 +121,7 @@ a {
   background-color: #000915;
   height: 800px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: center;
   justify-content: space-between;
   &_block {
@@ -139,7 +139,10 @@ a {
 
 .block{
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: column;
+  align-content: center;
+  align-items: center;
   gap: 32px;
   max-width: 584px;
   &_title{
@@ -177,9 +180,10 @@ a {
   background-size: cover;
   height: 800px;
 }
-//../GameStor-img/preview_bot.png//
+
 .penult{
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: column;
   align-content: center;
   align-items: center;
